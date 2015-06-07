@@ -8,7 +8,6 @@
   padding-bottom: 25px;
   border-right: black solid 1px;
   border-bottom: black solid 1px;
-
 }
 
 .formItem {
@@ -16,31 +15,6 @@
   padding-bottom: 10px;
 }
 
-.listHeaders {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.taskHead {
-  width: 80%;
-  text-align: left;
-  display: inline-block;
-  float: left;
-}
-
-.dateHead {
-  width: 20%;
-  text-align: left;
-  display: inline-block;
-  float: left;
-
-}
-
-
-.taskDate {
-
-}
 
 .taskList {
   width: 40%;
@@ -56,6 +30,25 @@
 }
 
 .task {
+  width: 100%;
   list-style-type: none;
+  color: white;
+  border: 1px solid #1C71EF;
+  background-color: #6FC0EC;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+.taskText {
+  width: 70%;
+  display: inline-block;
+}
+
+.taskDate {
+  width: 30%;
+  display: inline-block;
 
 }

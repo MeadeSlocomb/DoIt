@@ -1,0 +1,41 @@
+.container {
+  text-align: center; }
+
+.taskInput {
+  width: 25%;
+  float: left;
+  padding-bottom: 25px;
+  border-right: black solid 1px;
+  border-bottom: black solid 1px; }
+
+.formItem {
+  width: 90%;
+  padding-bottom: 10px; }
+
+.listHeaders {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+
+.taskHead {
+  width: 80%;
+  text-align: left;
+  display: inline-block;
+  float: left; }
+
+.dateHead {
+  width: 20%;
+  text-align: left;
+  display: inline-block;
+  float: left; }
+
+.taskList {
+  width: 40%;
+  margin: 50px auto;
+  display: inline-block; }
+
+.complete {
+  text-decoration: line-through; }
+
+.task {
+  list-style-type: none; }

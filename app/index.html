@@ -8,14 +8,44 @@
 </head>
 <body>
 
+
   <div class="container">
 
+    <div class="taskInput">
+      <h1>DO IT</h1>
+      <form id="addTask">
+        <div class="formItem">
+          <label class="">What do you need to do?</label>
+          <input type="text" id="taskText">
+        </div>
+        <div class="formItem">
+          <label class="">When does it need to be done?</label>
+          <input type="date" id="taskDate">
+        </div>
+        <button>Add Task</button>
+      </form>
+    </div>
+
+    <div class="taskList">
+      <div class="listHeaders">
+        <div class="taskHead">
+          <span>TASK</span>
+        </div>
+        <div class="dateHead">
+          <span>DUE</span>
+        </div>
+      </div>
+      <ul id="tasks" class="tasks"></ul>
+    </div>
+
   </div>
+
 
   <!-- VENDOR -->
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/underscore.js"></script>
   <script src="js/vendor/handlebars.js"></script>
+  <script src="vendor/js/moment.js"></script>
   <!-- TEMPLATES -->
   <script src="js/templates.js"></script>
   <!-- MAIN -->

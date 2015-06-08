@@ -35,7 +35,8 @@
   border-radius: 5px;
   vertical-align: middle;
   text-align: left;
-  display: inline-block; }
+  display: inline-block;
+  position: relative; }
 
 .completediv {
   background-color: #cacaca; }
@@ -50,9 +51,9 @@
 
 .delete {
   color: black;
-  margin: 25px 10px 0px 10px;
-  float: right;
-  display: inline-block; }
+  position: absolute;
+  top: 20px;
+  right: -30px; }
 
 .delete:hover {
   border: black 1px solid; }

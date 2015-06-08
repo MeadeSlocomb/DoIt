@@ -1,0 +1,6 @@
+{
+  "name": "Meade-TIY2015-DoIt",
+  "root": "dist",
+  "clean_urls": true,
+  "error_page": "y"
+}

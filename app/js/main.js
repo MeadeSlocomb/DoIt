@@ -17,7 +17,7 @@ $('#addTask').on('submit',function(event) {
   event.preventDefault();
   var taskText = $('#taskText').val();
   var taskDate = $('#taskDate').val();
-  var taskInstance = new NewTask({task: taskText});
+  var taskInstance = new NewTask({task: taskText, date: taskDate});
   storage.push(taskInstance);
   $('#tasks').append('<li class="incomplete task"><div class="taskText"><span>' + taskText + '</span></div><p></p><div class="taskDate"><p>Due: ' + taskDate + '</p></div></li>');
   this.reset();

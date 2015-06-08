@@ -18,7 +18,8 @@
   display: inline-block; }
 
 .complete {
-  text-decoration: line-through; }
+  text-decoration: line-through;
+  font-style: italic; }
 
 .task {
   width: 100%;
@@ -32,10 +33,14 @@
   vertical-align: middle;
   text-align: left; }
 
+.completediv {
+  background-color: #cacaca; }
+
 .taskText {
   width: 70%;
   display: inline-block; }
 
 .taskDate {
   width: 30%;
-  display: inline-block; }
+  display: inline-block;
+  clear: both; }

@@ -24,9 +24,7 @@
 
 .complete {
   text-decoration: line-through;
-}
-
-.incomplete {
+  font-style: italic;
 }
 
 .task {
@@ -42,6 +40,10 @@
   text-align: left;
 }
 
+.completediv {
+  background-color: #cacaca;
+}
+
 .taskText {
   width: 70%;
   display: inline-block;
@@ -50,5 +52,6 @@
 .taskDate {
   width: 30%;
   display: inline-block;
+  clear: both;
 
 }

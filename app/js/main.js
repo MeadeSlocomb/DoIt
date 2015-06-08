@@ -7,6 +7,7 @@ var NewTask = function(options) {
   this.task = options.task;
   this.date = options.date;
   this.complete = false;
+  this.deleted = false;
 };
 
 //Task Creation
@@ -19,11 +20,11 @@ $('#addTask').on('submit',function(event) {
   var taskDate = $('#taskDate').val();
   var taskInstance = new NewTask({task: taskText, date: taskDate});
   storage.push(taskInstance);
-  $('#tasks').append('<li class="incomplete task"><div class="taskText"><span>' + taskText + '</span></div><p></p><div class="taskDate"><p>Due: ' + taskDate + '</p></div></li>');
+  $('#tasks').append('<li class="incomplete task"><div class="taskText"><span>' + taskText + '</span></div><div class="taskDate"><p>Due: ' + taskDate + '</p></div></li><i class="delete fa fa-trash-o"></i>');
   this.reset();
 });
 
-// //Toggle
+////Toggle
 
 $('#tasks').on('click', 'li', function() {
   $(this).toggleClass('completediv');
@@ -32,5 +33,11 @@ $('#tasks').on('click', 'li', function() {
   var tTask = $(this).find('span').text();
   var taskToEdit = _.find(storage, {task: tTask});
   taskToEdit.complete = !taskToEdit.complete;
+});
+
+//Deleted
+
+$('.delete').on('click', 'li', function(){
+  $(this).addClass('deleted');
 });
 

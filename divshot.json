@@ -1,6 +1,6 @@
 {
-  "name": "Meade-TIY2015-DoIt",
-  "root": "dist",
+  "name": "tiy2015-slocomb-doit",
+  "root": "app",
   "clean_urls": true,
-  "error_page": "y"
+  "error_page": "error.html"
 }
